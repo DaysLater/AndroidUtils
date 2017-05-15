@@ -13,7 +13,11 @@
 		a.封装了一些常用的工具类,其中util包下的所有工具类为别人一体整理的.
 
 		b.其余上面的工具类为我自己整理集合或书写的.
-  
+
+	更新说明(v1.1):
+
+	    新增键盘工具类,时间选择器工具类,判断重复点击工具类.textview显示自动换行工具类,DES加密工具类,ImageUtil新增方法,文件大小获取工具类.文件缓存管理工具类
+
 具体目录如下:
 
 1.[request](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/request)包下包含有
@@ -22,10 +26,16 @@
 - [xutils3](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/request/xutils) 	xUtils3请求,请视具体情况适用.
 
 2.[acache](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/acache)包下为缓存工具类或者清理缓存的工具类所在.
+- [ACache](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/acache/ACache.java) 缓存工具类
+- [DataCacheManager](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/acache/DataCacheManager.java) 缓存管理工具类
+- [DataCleanManagerUtils](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/acache/DataCleanManagerUtils.java) 缓存清理工具类
+- [PreferenceManager](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/acache/PreferenceManager.java) sp管理工具类
+- [PreferencesUtils](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/acache/PreferencesUtils.java) sp工具类
+- [UserUtils](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/acache/UserUtils.java) 用户名与密码保存工具类
 
 3.[permission](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/permission)包下为抽离环信的权限判断与请求的工具类.
 
-4.[storage](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/storage)包下为SDK相关的工具类
+4.[storage](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/storage)包下为SDCard相关的工具类
 
 5.[media](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/media)包下包含有
 
@@ -37,6 +47,7 @@
 6.[string](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/string)包下包含有
 
 - [AESUtils](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/string/AESUtils.java)(AES加密解密工具类)
+- [CyptoUtils](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/string/CyptoUtils.java)(DES加密工具类)
 - [MD5](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/string/MD5.java)(MD5加密工具类)
 - [其他工具类](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/string).具体自己看源码
 
@@ -75,6 +86,15 @@ b.webview相关 [webView](https://github.com/DaysLater/AndroidUtils/tree/master/
 
 - [AnimUtils](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/view/AnimUtils.java) 动画工具类,按照参数传就OK
 - [ViewFindUtils](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/view/ViewFindUtils.java) 简写ViewHodler 和findViewById
+- [AutoSpliText](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/view/AutoSpliText.java) 文本显示自动换行工具类
+- [CommonUtils](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/view/CommonUtils.java) 判断是否是重复点击的工具类
+
+11.[file](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/file) 包下为文件相关工具类
+- [AttachmentStore](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/file/AttachmentStore.java) 把附件保存到系统中
+- [FilePathUtils](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/file/FilePathUtils.java) 获取文件地址的工具类
+- [FileSizeUtil](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/file/FileSizeUtil.java) 文件大小工具类
+- [FileUtil](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/file/FileUtil.java) 文件工具类
+- [OpenFileUtils](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/file/OpenFileUtils.java) 打开文件工具类
 
 如何使用?
 
@@ -98,5 +118,5 @@ b.webview相关 [webView](https://github.com/DaysLater/AndroidUtils/tree/master/
 
 1.在1.0完成后,还在慢慢增加常用工具类,多谢Android交流群里面的群友的支持.
 
-2.1.1添加键盘工具类,时间选择器工具类
+2.感谢交流群_小戴的工具类奉献
 

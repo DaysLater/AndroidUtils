@@ -16,20 +16,19 @@ import java.lang.reflect.Field;
  */
 public class SoftKeyboardUtil {
 
-    private ViewTreeObserver.OnGlobalLayoutListener onGlobalLayoutListener;
+    private  ViewTreeObserver.OnGlobalLayoutListener onGlobalLayoutListener;
     private InputMethodManager imm;
     int vHeight = 0;
 
     public SoftKeyboardUtil() {
-
     }
 
     /**
      * 监听键盘高度和键盘时候处于打开状态，在调用的Activity中的onDestroy()方法中调用
      * 该类中的removeGlobalOnLayoutListener()方法来移除监听
      *
-     * @param activity
-     * @param listener
+     * @param activity 当前页面
+     * @param listener 监听 返回高度及是否打开
      */
     public void observeSoftKeyboard(Activity activity, final OnSoftKeyboardChangeListener listener) {
         final View decorView = activity.getWindow().getDecorView();
@@ -50,12 +49,10 @@ public class SoftKeyboardUtil {
                 // 屏幕高度。这个高度不含虚拟按键的高度
                 int screenHeight = decorView.getRootView().getHeight();
 
-
                 // 在不显示软键盘时，heightDiff等于状态栏的高度
                 // 在显示软键盘时，heightDiff会变大，等于软键盘加状态栏的高度。
                 // 所以heightDiff大于状态栏高度时表示软键盘出现了，
                 // 这时可算出软键盘的高度，即heightDiff减去状态栏的高度
-
 
                 if ((screenHeight - r.bottom) < screenHeight / 4) {
                     isVKeyMap = true;
@@ -105,16 +102,22 @@ public class SoftKeyboardUtil {
                         }
                     }
                 }
-
-
             }
         });
     }
 
-    public interface OnSoftKeyboardChangeListener {
+    /**
+     * 接口监听
+     */
+    public  interface OnSoftKeyboardChangeListener {
+        //返回键盘高度及是否显示
         void onSoftKeyBoardChange(int softKeybardHeight, boolean isShow);
     }
 
+    /**
+     * 移除键盘监听的方法
+     * @param activity 当前activity
+     */
     public void removeGlobalOnLayoutListener(Activity activity) {
         final View decorView = activity.getWindow().getDecorView();
         if (onGlobalLayoutListener != null) {
@@ -126,8 +129,12 @@ public class SoftKeyboardUtil {
         }
     }
 
-    // 获取状态栏高度
-    public int getStatusBarHeight(Context context) {
+    /**
+     * 获取状态栏高度
+     * @param context 上下文对象
+     * @return int 高度
+     */
+    public  int getStatusBarHeight(Context context) {
         try {
             Class<?> c = Class.forName("com.android.internal.R$dimen");
             Object obj = c.newInstance();
@@ -140,6 +147,11 @@ public class SoftKeyboardUtil {
         return 0;
     }
 
+    /**
+     * 隐藏键盘
+     * @param context 上下文对象
+     * @param view     指定view
+     */
     public void hideKeyboard(Context context, View view) {
         view.requestFocus();
         imm = (InputMethodManager) context.getSystemService(Context.INPUT_METHOD_SERVICE);
@@ -147,12 +159,21 @@ public class SoftKeyboardUtil {
                 InputMethodManager.HIDE_NOT_ALWAYS);
     }
 
+    /**
+     * 隐藏键盘
+     * @param activity 当前activity
+     */
     public void hideKeyboard(Activity activity) {
         imm = (InputMethodManager) activity.getSystemService(Context.INPUT_METHOD_SERVICE);
         imm.hideSoftInputFromWindow(activity.getCurrentFocus().getWindowToken(),
                 InputMethodManager.HIDE_NOT_ALWAYS);
     }
 
+    /**
+     * 显示键盘
+     * @param context 上下文对象
+     * @param view   指定view
+     */
     public void showKeyboard(Context context, View view) {
         imm = (InputMethodManager) context.getSystemService(Context.INPUT_METHOD_SERVICE);
         imm.showSoftInput(view, 0);

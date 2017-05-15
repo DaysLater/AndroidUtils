@@ -20,7 +20,11 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.RandomAccessFile;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Properties;
@@ -102,7 +106,7 @@ public class FileUtil {
             activity.startActivity(intent);
         } catch (Exception var5) {
             var5.printStackTrace();
-            Toast.makeText(activity, "Can\'t find proper app to open this file", 1).show();
+            Toast.makeText(activity, "Can\'t find proper app to open this file", Toast.LENGTH_SHORT).show();
         }
     }
 

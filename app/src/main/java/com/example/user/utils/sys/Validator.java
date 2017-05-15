@@ -116,7 +116,7 @@ public class Validator {
 
 	/**
 	 * 校验URL
-	 * 
+	 *
 	 * @param url
 	 * @return 校验通过返回true，否则返回false
 	 */

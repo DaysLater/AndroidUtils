@@ -93,7 +93,6 @@ b.webview相关 [webView](https://github.com/DaysLater/AndroidUtils/tree/master/
 11.[file](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/file) 包下为文件相关工具类
 - [AttachmentStore](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/file/AttachmentStore.java) 把附件保存到系统中
 - [FilePathUtils](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/file/FilePathUtils.java) 获取文件地址的工具类
-- [FileSizeUtil](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/file/FileSizeUtil.java) 文件大小工具类
 - [FileUtil](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/file/FileUtil.java) 文件工具类
 - [OpenFileUtils](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/file/OpenFileUtils.java) 打开文件工具类
 

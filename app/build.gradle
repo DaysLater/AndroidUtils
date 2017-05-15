@@ -1,5 +1,4 @@
 apply plugin: 'com.android.library'
-//apply plugin: 'com.novoda.bintray-release'
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
@@ -15,18 +14,6 @@ android {
         // 防止在发布的时候出现因MissingTranslation导致Build Failed!
         disable 'MissingTranslation'
     }
-//    sourceSets {
-//        main {
-//            java.srcDirs = ['src']
-//            resources.srcDirs = ['src']
-//            aidl.srcDirs = ['src']
-//            renderscript.srcDirs = ['src']
-//            res.srcDirs = ['res']
-//            manifest.srcFile('AndroidManifest.xml')
-//            assets.srcDirs = ['assets']
-//
-//        }
-//    }
     buildTypes {
         release {
             minifyEnabled false
@@ -49,14 +36,6 @@ android {
     }
     makeJar.dependsOn(build)
 }
-//publish {
-//    userOrg = '814326663a'
-//    groupId = 'com.example.user.utils'
-//    artifactId = 'dayslater/AndroidUtils/AndroidUtils'
-//    publishVersion = '1.1'
-//    desc = 'The tools of android!'
-//    website = 'https://github.com/dayslater/AndroidUtils'
-//}
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')

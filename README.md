@@ -6,7 +6,7 @@
 
 3.本项目已上传到[jitpack.io](https://jitpack.io),使依赖更方便.
 
-4.依赖jar包下载:[点击下载](http://download.csdn.net/detail/qq_31590149/9840984).
+4.依赖jar包下载:[点击下载](http://download.csdn.net/detail/qq_31590149/9840984).(由于CSDN不能修改上传的资源,此jar包仅为1.0版本)
 	
 	说明:V1.0
 	
@@ -93,3 +93,10 @@ b.webview相关 [webView](https://github.com/DaysLater/AndroidUtils/tree/master/
 			//copy to your app build 
    			compile 'com.github.DaysLater:AndroidUtils:v1.1'
    		}
+
+写在后面:
+
+1.在1.0完成后,还在慢慢增加常用工具类,多谢Android交流群里面的群友的支持.
+
+2.1.1添加键盘工具类,时间选择器工具类
+

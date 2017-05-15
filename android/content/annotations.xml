@@ -1,0 +1,5 @@
+<root>
+  <item name='android.content.Context java.io.File getCacheDir()'>
+    <annotation name='android.support.annotation.NonNull' />
+  </item>
+</root>

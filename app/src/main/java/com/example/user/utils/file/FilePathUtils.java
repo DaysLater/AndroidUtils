@@ -182,4 +182,17 @@ public class FilePathUtils {
         activity.startActivityForResult(intent, requestCode);
     }
 
+    /**
+     * 调用系统相机的方法
+     * @param activity 调用页
+     * @param filePath 保存文件的地址
+     * @param fileName  保存图片的名字
+     * @param requestCode 请求码
+     */
+    public static void startCamare(Activity activity, String filePath,String fileName,int requestCode){
+        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        // 指定调用相机拍照后照片的储存路径
+        intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(new File(filePath, fileName)));
+        activity.startActivityForResult(intent, requestCode);
+    }
 }

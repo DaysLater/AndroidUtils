@@ -10,8 +10,8 @@
 - 由于CSDN不能修改上传的资源,此jar包仅为1.0版本
 - [CSDN下载](http://download.csdn.net/detail/qq_31590149/9840984)
 - 最新依赖jar包下载,请点击跳转
-- [百度云下载](http://pan.baidu.com/s/1nuZkKFB)
-- [微云下载](https://share.weiyun.com/b3e10d35129a30ad1f9b4c337d686206)
+- [百度云下载](http://pan.baidu.com/s/1qYqFH5i)
+- [微云下载](https://share.weiyun.com/8d97b907d926d101c66a0f197995cda8)
 	
 	说明:V1.0
 	
@@ -21,7 +21,7 @@
 
     更新说明(v1.1):
 
-	    新增键盘工具类,时间选择器工具类,判断重复点击工具类.textview显示自动换行工具类,DES加密工具类,ImageUtil新增方法,文件大小获取工具类.文件缓存管理工具类
+	    新增键盘工具类,时间选择器工具类,判断重复点击工具类.textview显示自动换行工具类,DES加密工具类,ImageUtil新增方法,文件大小获取工具类.文件缓存管理工具类,打开QQ咨询企业QQ或者客服的工具类
 
 
 具体目录如下:
@@ -89,11 +89,11 @@ b.webview相关 [webView](https://github.com/DaysLater/AndroidUtils/tree/master/
 9.[util](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/util)包为别人一体整理的工具类
 
 10.[view](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/view)包下含有
-
 - [AnimUtils](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/view/AnimUtils.java) 动画工具类,按照参数传就OK
 - [ViewFindUtils](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/view/ViewFindUtils.java) 简写ViewHodler 和findViewById
 - [AutoSpliText](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/view/AutoSpliText.java) 文本显示自动换行工具类
 - [CommonUtils](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/view/CommonUtils.java) 判断是否是重复点击的工具类
+- [OpenQToChat](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/view/OpenQToChat.java) 打开企业QQ咨询的工具类
 
 11.[file](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/file) 包下为文件相关工具类
 - [AttachmentStore](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/file/AttachmentStore.java) 把附件保存到系统中

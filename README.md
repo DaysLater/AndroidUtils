@@ -116,7 +116,7 @@ b.webview相关 [webView](https://github.com/DaysLater/AndroidUtils/tree/master/
 
    		dependencies {
 			//copy to your app build 
-   			compile 'com.github.DaysLater:AndroidUtils:v1.1'
+   			compile 'com.github.DaysLater:AndroidUtils:v1.2'
    		}
 
 写在后面:

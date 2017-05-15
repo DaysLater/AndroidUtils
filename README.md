@@ -8,10 +8,10 @@
 
 4.依赖jar包下载:
 - 由于CSDN不能修改上传的资源,此jar包仅为1.0版本
-- [CSDN下载](http://download.csdn.net/detail/qq_31590149/9840984).
+- [CSDN下载](http://download.csdn.net/detail/qq_31590149/9840984)
 - 最新依赖jar包下载,请点击跳转
-- [百度云下载](http://pan.baidu.com/s/1nuZkKFB))
-- [微云下载](https://share.weiyun.com/b3e10d35129a30ad1f9b4c337d686206))
+- [百度云下载](http://pan.baidu.com/s/1nuZkKFB)
+- [微云下载](https://share.weiyun.com/b3e10d35129a30ad1f9b4c337d686206)
 	
 	说明:V1.0
 	

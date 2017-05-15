@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.novoda.bintray-release'
+//apply plugin: 'com.novoda.bintray-release'
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
@@ -49,14 +49,14 @@ android {
     }
     makeJar.dependsOn(build)
 }
-publish {
-    userOrg = '814326663a'
-    groupId = 'com.example.user.utils'
-    artifactId = 'dayslater/AndroidUtils/AndroidUtils'
-    publishVersion = '1.1'
-    desc = 'The tools of android!'
-    website = 'https://github.com/dayslater/AndroidUtils'
-}
+//publish {
+//    userOrg = '814326663a'
+//    groupId = 'com.example.user.utils'
+//    artifactId = 'dayslater/AndroidUtils/AndroidUtils'
+//    publishVersion = '1.1'
+//    desc = 'The tools of android!'
+//    website = 'https://github.com/dayslater/AndroidUtils'
+//}
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
@@ -68,4 +68,6 @@ dependencies {
     compile 'com.github.chrisbanes.photoview:library:1.2.4'
     compile 'com.github.bumptech.glide:glide:3.7.0'
     compile 'org.xutils:xutils:3.5.0'
+    //时间选择器
+    compile 'com.jzxiang.pickerview:TimePickerDialog:1.0.1'
 }

@@ -19,10 +19,10 @@ import java.util.List;
 public class OpenQToChat {
 
     /**
-     * 打开QQ去咨询个人QQ
+     * 打开QQ去咨询QQ
      *
      * @param context 上下文对象
-     * @param qq      要跳转的QQ号
+     * @param qq      要跳转的QQ号 chat_type为wpa
      */
     public static void OpenQQToChatNumal(Context context, String qq) {
         if (isQQClientAvailable(context)) {
@@ -34,10 +34,10 @@ public class OpenQToChat {
     }
 
     /**
-     * 打开QQ去企业QQ
+     * 打开QQ去咨询企业QQ
      *
      * @param context 上下文对象
-     * @param qq      要跳转的QQ号
+     * @param qq      要跳转的QQ号 chat_type为crm src_type为web
      */
     public static void OpenQQToChatCompany(Context context, String qq) {
         if (isQQClientAvailable(context)) {

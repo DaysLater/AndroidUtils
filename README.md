@@ -12,7 +12,8 @@
 - 最新依赖jar包下载,请点击跳转
 - [百度云下载](http://pan.baidu.com/s/1qYqFH5i)
 - [微云下载](https://share.weiyun.com/8d97b907d926d101c66a0f197995cda8)
--
+
+5.如果要使用自定义控件,请使用maven的方式引用,jar包形式暂只支持工具类的使用
 
 	
 	说明:V1.0

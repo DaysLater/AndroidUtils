@@ -13,6 +13,9 @@ import android.os.Environment;
 import android.provider.DocumentsContract;
 import android.provider.MediaStore;
 import android.util.Log;
+import android.widget.Toast;
+
+import com.example.user.utils.storage.StorageUtil;
 
 import java.io.File;
 
@@ -162,6 +165,10 @@ public class FilePathUtils {
      * @param requestCode 请求码
      */
     public static void startPhotoZoom(Activity activity, Uri uri1, File file, int size, int requestCode) {
+        if (!StorageUtil.isExternalStorageExist()){
+            Toast.makeText(activity, "SD卡不存在,暂无法调用", Toast.LENGTH_SHORT).show();
+           return;
+        }
         Intent intent = new Intent("com.android.camera.action.CROP");
         intent.setDataAndType(uri1, "image/*");
         // crop为true是设置在开启的intent中设置显示的view可以剪裁
@@ -174,7 +181,6 @@ public class FilePathUtils {
         intent.putExtra("outputX", size);
         intent.putExtra("outputY", size);
         intent.putExtra("return-data", false);
-
         intent.putExtra(MediaStore.EXTRA_OUTPUT,
                 Uri.fromFile(file));
         intent.putExtra("outputFormat", Bitmap.CompressFormat.PNG.toString());
@@ -190,6 +196,10 @@ public class FilePathUtils {
      * @param requestCode 请求码
      */
     public static void startCamare(Activity activity, String filePath,String fileName,int requestCode){
+        if (!StorageUtil.isExternalStorageExist()){
+            Toast.makeText(activity, "SD卡不存在,暂无法调用", Toast.LENGTH_SHORT).show();
+            return;
+        }
         Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         // 指定调用相机拍照后照片的储存路径
         intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(new File(filePath, fileName)));

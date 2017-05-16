@@ -100,7 +100,20 @@ public class GlideUtils {
                 .transform(new GlideCircleTransform(context))
                 .into(view);
     }
-
+    /**
+     * Gilde 下载图片转换成圆形图片的方法
+     * @param context
+     * @param srcId  图片ID
+     * @param view 显示的ImageView
+     */
+    public static void downLoadCircleImage(Context context, int srcId, ImageView view,int plcaeId,int errorId){
+        Glide.with(context)
+                .load(srcId)
+                .placeholder(plcaeId)
+                .error(errorId)
+                .transform(new GlideCircleTransform(context))
+                .into(view);
+    }
     /**
      *  Glide 下载图片并转换成默认圆角角度大小图片的方法 默认为4dp
      * @param context

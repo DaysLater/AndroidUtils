@@ -10,8 +10,8 @@
 - 由于CSDN不能修改上传的资源,此jar包仅为1.0版本
 - [CSDN下载](http://download.csdn.net/detail/qq_31590149/9840984)
 - 最新依赖jar包下载,请点击跳转
-- [百度云下载](http://pan.baidu.com/s/1qYqFH5i)
-- [微云下载](https://share.weiyun.com/8d97b907d926d101c66a0f197995cda8)
+- [百度云下载](http://pan.baidu.com/s/1skTDbJ3)
+- [微云下载](https://share.weiyun.com/846a767c04521955bbf810841bce0af8)
 
 5.如果要使用自定义控件,请使用maven的方式引用,jar包形式暂只支持工具类的使用
 
@@ -33,6 +33,11 @@
 	    文件缓存管理工具类
 	    打开QQ咨询企业QQ或者客服的工具类
 	    分组排序工具类
+	 更新说明(v1.3):
+	    新增分组排序工具类
+	    新增吐司工具类
+	    新增 double保留2为小数或加前缀后缀的工具类
+
 
 
 具体目录如下:
@@ -82,7 +87,7 @@
 - [DataUtils](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/sys/DataUtils.java)和[DateUtils](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/sys/DateUtils.java)		时间处理工具类	
 - [SoftKeyboardUtil](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/sys/SoftKeyboardUtil.java)  键盘工具类
 - [TimePickUtils](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/sys/TimePickUtils.java)  时间选择器工具类
-
+- [ToastUtils](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/sys/ToastUtils.java) 吐司工具类
 
 8.[weight](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/weight)包下自定义控件,包含有
 
@@ -106,6 +111,7 @@ b.webview相关 [webView](https://github.com/DaysLater/AndroidUtils/tree/master/
 - [CommonUtils](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/view/CommonUtils.java) 判断是否是重复点击的工具类
 - [OpenQToChat](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/view/OpenQToChat.java) 打开企业QQ咨询的工具类
 - [ComparatorUtil](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/view/ComparatorUtil.java) 分组排序工具类
+- [NumberFormat](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/view/NumberFormat.java) double保留2为小数或加前缀后缀的工具类
 
 11.[file](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/file) 包下为文件相关工具类
 - [AttachmentStore](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/file/AttachmentStore.java) 把附件保存到系统中
@@ -128,7 +134,7 @@ b.webview相关 [webView](https://github.com/DaysLater/AndroidUtils/tree/master/
 
    		dependencies {
 			//copy to your app build 
-   			compile 'com.github.DaysLater:AndroidUtils:v1.2'
+   			compile 'com.github.DaysLater:AndroidUtils:v1.3'
    		}
 
 写在后面:

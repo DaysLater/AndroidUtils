@@ -178,4 +178,36 @@ public class SoftKeyboardUtil {
         imm = (InputMethodManager) context.getSystemService(Context.INPUT_METHOD_SERVICE);
         imm.showSoftInput(view, 0);
     }
+
+    /**
+     * 解除键盘高度遮挡UI的方法
+     *  1、获取main在窗体的可视区域
+     *  2、获取main在窗体的不可视区域高度
+     *  3、判断不可视区域高度
+     *      1、大于100：键盘显示  获取Scroll的窗体坐标
+     *                           算出main需要滚动的高度，使scroll显示。
+     *      2、小于100：键盘隐藏
+     *   4. 不需要在AndroidManifest.xml中配置键盘属性
+     *
+     * @param main 根布局
+     * @param scroll 需要显示的最下方View
+     */
+    public static void addLayoutListener(final View main, final View scroll) {
+        main.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+            @Override
+            public void onGlobalLayout() {
+                Rect rect = new Rect();
+                main.getWindowVisibleDisplayFrame(rect);
+                int mainInvisibleHeight = main.getRootView().getHeight() - rect.bottom;
+                if (mainInvisibleHeight > 100) {
+                    int[] location = new int[2];
+                    scroll.getLocationInWindow(location);
+                    int srollHeight = (location[1] + scroll.getHeight()) - rect.bottom;
+                    main.scrollTo(0, srollHeight);
+                } else {
+                    main.scrollTo(0, 0);
+                }
+            }
+        });
+    }
 }

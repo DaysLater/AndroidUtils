@@ -49,6 +49,10 @@ public class AutoSpliText {
         return sbNewText.toString();
     }
 
+    /**
+     * TextView不换行
+     * @param tv
+     */
     public void autoText(final TextView tv) {
         if (itemWidth == 0) {
             tv.post(new Runnable() {

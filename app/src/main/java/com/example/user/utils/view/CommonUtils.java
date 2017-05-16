@@ -8,6 +8,10 @@ package com.example.user.utils.view;
 public class CommonUtils {
     private static long lastClickTime;
 
+    /**
+     * 防止重复点击给个时间间隔
+     * @return
+     */
     public static boolean isFastDoubleClick() {
         long time = System.currentTimeMillis();
         long timeD = time - lastClickTime;

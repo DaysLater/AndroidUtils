@@ -32,6 +32,7 @@
 	    文件大小获取工具类
 	    文件缓存管理工具类
 	    打开QQ咨询企业QQ或者客服的工具类
+	    分组排序工具类
 
 
 具体目录如下:
@@ -104,6 +105,7 @@ b.webview相关 [webView](https://github.com/DaysLater/AndroidUtils/tree/master/
 - [AutoSpliText](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/view/AutoSpliText.java) 文本显示自动换行工具类
 - [CommonUtils](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/view/CommonUtils.java) 判断是否是重复点击的工具类
 - [OpenQToChat](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/view/OpenQToChat.java) 打开企业QQ咨询的工具类
+- [ComparatorUtil](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/view/ComparatorUtil.java) 分组排序工具类
 
 11.[file](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/file) 包下为文件相关工具类
 - [AttachmentStore](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/file/AttachmentStore.java) 把附件保存到系统中
@@ -133,5 +135,5 @@ b.webview相关 [webView](https://github.com/DaysLater/AndroidUtils/tree/master/
 
 1.在1.0完成后,还在慢慢增加常用工具类,多谢Android交流群里面的群友的支持.
 
-2.感谢交流群_小戴的工具类奉献
+2.感谢交流群_小戴的工具类支持与奉献.
 

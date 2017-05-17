@@ -41,8 +41,10 @@
 	    在util包下的AppUtils类里面增加4个方法
 	    在weiht里面增加一个自定义的textview
 	    view包下增加2个关于文字排版的工具类
-
-
+	 更新说明(v1.5):(未上传maven,未打包jar)
+	    新增侧滑删除的父布局空间
+	    侧滑删除的listview
+	    圆弧形进度条
 
 
 
@@ -113,6 +115,7 @@ c.其他自定义view: [numal](https://github.com/DaysLater/AndroidUtils/blob/ma
 - [SwipeListLayout](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/weight/numal/SwipeListLayout.java) 侧滑删除的layout,必须是父类layout,需配合 SwipeSlideListener 使用
 - [SwipeSlideListener](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/weight/numal/SwipeSlideListener.java) 侧滑删除layout的监听器  侧滑Layout需与之配合使用 内含一个传入litview的滑动监听
 - [ListSlideView](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/weight/numal/ListSlideView.java) 自定义的侧滑listView 需配合item布局使用
+- [RoundProgressView](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/weight/numal/RoundProgressView.java) 自定义圆弧进度条
 
 9.[util](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/util)包为别人一体整理的工具类
 

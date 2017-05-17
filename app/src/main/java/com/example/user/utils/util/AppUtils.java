@@ -8,6 +8,9 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.Signature;
 import android.graphics.drawable.Drawable;
+import android.telephony.TelephonyManager;
+import android.util.DisplayMetrics;
+import android.view.WindowManager;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -590,5 +593,51 @@ public class AppUtils {
             isSuccess &= CleanUtils.cleanCustomCache(dir);
         }
         return isSuccess;
+    }
+
+    /**
+     * 获取设备ID
+     *@param context 上下文
+     */
+    public static String getDeviceId(Context context){
+        TelephonyManager tm = (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
+        return tm.getDeviceId();
+    }
+
+    /**
+     * 获取dp2px转换
+     *@param paramContext 上下文
+     * @param paramFloat 转换的dp
+     */
+    public static int dp2px(Context paramContext, float paramFloat)
+    {
+        float scale = paramContext.getResources().getDisplayMetrics().density;
+        return (int)(0.5F + paramFloat * scale);
+    }
+
+    /**
+     * 获取屏幕宽度
+     *@param paramContext 上下文
+     */
+    public static int getWindowWidth(Context paramContext)
+    {
+        DisplayMetrics dm = new DisplayMetrics();
+        getWindowManager(paramContext).getDefaultDisplay().getMetrics(dm);
+        return dm.widthPixels;
+    }
+
+    /**
+     * 获取屏幕高度
+     *@param paramContext 上下文
+     */
+    public static int getWindowHeight(Context paramContext)
+    {
+        DisplayMetrics dm = new DisplayMetrics();
+        getWindowManager(paramContext).getDefaultDisplay().getMetrics(dm);
+        return dm.heightPixels;
+    }
+    public static WindowManager getWindowManager(Context paramContext)
+    {
+        return (WindowManager)paramContext.getSystemService(Context.WINDOW_SERVICE);
     }
 }

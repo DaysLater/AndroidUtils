@@ -10,8 +10,8 @@
 - 由于CSDN不能修改上传的资源,此jar包仅为1.0版本
 - [CSDN下载](http://download.csdn.net/detail/qq_31590149/9840984)
 - 最新依赖jar包下载,请点击跳转
-- [百度云下载](http://pan.baidu.com/s/1skTDbJ3)
-- [微云下载](https://share.weiyun.com/846a767c04521955bbf810841bce0af8)
+- [百度云下载](http://pan.baidu.com/s/1mhRL0d6)
+- [微云下载](https://share.weiyun.com/dffbea1179451240e02275939b97da1a)
 
 5.如果要使用自定义控件,请使用maven的方式引用,jar包形式暂只支持工具类的使用
 
@@ -37,6 +37,11 @@
 	    新增分组排序工具类
 	    新增吐司工具类
 	    新增 double保留2为小数或加前缀后缀的工具类
+	 更新说明(v1.4):
+	    在util包下的AppUtils类里面增加4个方法
+	    在weiht里面增加一个自定义的textview
+	    view包下增加2个关于文字排版的工具类
+
 
 
 
@@ -97,10 +102,13 @@ a.下拉刷新上拉加载: [swipyrefresh](https://github.com/DaysLater/AndroidU
 - [SwipyRefreshLayout](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/weight/swipyrefresh/SwipyRefreshLayout.java) 下拉刷新/上拉加载更多
 - [SwipyRefreshLayoutDirection](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/weight/swipyrefresh/SwipyRefreshLayoutDirection.java) 配合下拉刷新/上拉加载更多使用
 
-b.webview相关 [webView](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/weight/webView)包
+b.webview相关: [webView](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/weight/webView)包
 - [scrollWebview](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/weight/webView/ScrollWebView.java)  可滑动的webview
 - [MyWebViewClient](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/weight/webView/MyWebViewClient.java) 帮助WebView处理各种通知、请求事件的(带dialog)
 - [MyWebChromeClient](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/weight/webView/MyWebChromeClient.java) 辅助WebView处理Javascript的对话框，网站图标，网站title，加载进度
+
+c.其他自定义view: [numal](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/weight/numal)包
+- [SelectTextView](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/weight/numal/SelectTextView.java) 关于超文字显示的textview  文字点击显示更多/隐藏一部分
 
 9.[util](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/util)包为别人一体整理的工具类
 
@@ -112,6 +120,8 @@ b.webview相关 [webView](https://github.com/DaysLater/AndroidUtils/tree/master/
 - [OpenQToChat](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/view/OpenQToChat.java) 打开企业QQ咨询的工具类
 - [ComparatorUtil](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/view/ComparatorUtil.java) 分组排序工具类
 - [NumberFormat](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/view/NumberFormat.java) double保留2为小数或加前缀后缀的工具类
+- [AnalysisHTML](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/view/AnalysisHTML.java)  关于文字排版的工具类
+- [PaintViewUtil](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/view/PaintViewUtil.java) 关于文字排版的工具类
 
 11.[file](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/file) 包下为文件相关工具类
 - [AttachmentStore](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/file/AttachmentStore.java) 把附件保存到系统中
@@ -134,12 +144,13 @@ b.webview相关 [webView](https://github.com/DaysLater/AndroidUtils/tree/master/
 
    		dependencies {
 			//copy to your app build 
-   			compile 'com.github.DaysLater:AndroidUtils:v1.3'
+   			compile 'com.github.DaysLater:AndroidUtils:v1.4'
+   			// 如要关联之前的依赖 请修改compile 'com.github.DaysLater:AndroidUtils:v1.x' 为对应的版本号.工具类版本从1.0开始
    		}
 
 写在后面:
 
 1.在1.0完成后,还在慢慢增加常用工具类,多谢Android交流群里面的群友的支持.
 
-2.感谢交流群_小戴的工具类支持与奉献.
+2.感谢交流群_小戴,交流群_三金的工具类支持与奉献.
 

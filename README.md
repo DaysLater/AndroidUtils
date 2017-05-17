@@ -10,19 +10,18 @@
 - 由于CSDN不能修改上传的资源,此jar包仅为1.0版本
 - [CSDN下载](http://download.csdn.net/detail/qq_31590149/9840984)
 - 最新依赖jar包下载,请点击跳转
-- [百度云下载](http://pan.baidu.com/s/1mhRL0d6)
-- [微云下载](https://share.weiyun.com/dffbea1179451240e02275939b97da1a)
+- [百度云下载](http://pan.baidu.com/s/1skEKd3J)
+- [微云下载](https://share.weiyun.com/eee0327b28a9bba47a3c3d9d20df987b)
+- 说明:如果下载链接不存在,请发邮件至邮箱:814326663@qq.com,询问最新的下载链接
 
 5.如果要使用自定义控件,请使用maven的方式引用,jar包形式暂只支持工具类的使用
 
-	说明:V1.0
+	更新说明(V1.0):
 
 		a.封装了一些常用的工具类,其中util包下的所有工具类为别人一体整理的.
-
 		b.其余上面的工具类为我自己整理集合或书写的.
 
     更新说明(v1.1,v1.2):
-
 	    新增键盘工具类
 	    时间选择器工具类
 	    判断重复点击工具类,
@@ -33,15 +32,18 @@
 	    文件缓存管理工具类
 	    打开QQ咨询企业QQ或者客服的工具类
 	    分组排序工具类
+
 	 更新说明(v1.3):
 	    新增分组排序工具类
 	    新增吐司工具类
 	    新增 double保留2为小数或加前缀后缀的工具类
+
 	 更新说明(v1.4):
 	    在util包下的AppUtils类里面增加4个方法
 	    在weiht里面增加一个自定义的textview
 	    view包下增加2个关于文字排版的工具类
-	 更新说明(v1.5):(未上传maven,未打包jar)
+
+	 更新说明(v1.5):
 	    新增侧滑删除的父布局空间
 	    侧滑删除的listview
 	    圆弧形进度条
@@ -49,6 +51,7 @@
 	    增加一个三个圆动画效果的欢迎动画
 	    增加一个动画工具类
 	    增加一个LuBanUtils图片压缩工具类
+	    新增一个动画相关的包,包下含有动画相关的类
 
 
 
@@ -144,6 +147,15 @@ c.其他自定义view: [numal](https://github.com/DaysLater/AndroidUtils/blob/ma
 - [FileUtil](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/file/FileUtil.java) 文件工具类
 - [OpenFileUtils](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/file/OpenFileUtils.java) 打开文件工具类
 
+12.[loaddrawable](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/loaddrawable) 关于加载动画及进度动画的工具类
+- [circle](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/loaddrawable/circle) 关于圆的进度动画或加载动画
+- [goods](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/loaddrawable/goods) 关于水波/气球进度动画或加载动画
+- [scenery](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/loaddrawable/scenery) 关于风扇形式的加载进度/日夜交替的动画
+- [LoadingDrawable](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/loaddrawable/LoadingDrawable.java) 自定义加载动画的drawable
+- [LoadingRenderer](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/loaddrawable/LoadingRenderer.java) 加载动画的基础类
+- [LoadingRendererFactory](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/loaddrawable/LoadingRendererFactory.java) 加载动画的工厂类
+- [LoadingView](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/loaddrawable/LoadingView.java) 加载动画的View,需要在XML文件中引用
+
 如何使用?
 
 1.首先在你的根目录的build.gradle添加这一句代码
@@ -159,8 +171,10 @@ c.其他自定义view: [numal](https://github.com/DaysLater/AndroidUtils/blob/ma
 
    		dependencies {
 			//copy to your app build 
-   			compile 'com.github.DaysLater:AndroidUtils:v1.4'
-   			// 如要关联之前的依赖 请修改compile 'com.github.DaysLater:AndroidUtils:v1.x' 为对应的版本号.工具类版本从1.0开始
+   			compile 'com.github.DaysLater:AndroidUtils:v1.5'
+   			// 如要关联之前的依赖 请修改
+   			//compile 'com.github.DaysLater:AndroidUtils:v1.x'
+   			//为对应的版本号.工具类版本从1.0开始
    		}
 
 写在后面:
@@ -169,5 +183,5 @@ c.其他自定义view: [numal](https://github.com/DaysLater/AndroidUtils/blob/ma
 
 2.感谢交流群_小戴,交流群_三金的工具类支持与奉献.
 
-3.感谢NineOldAndroid及SimilarUCBrowserWizardGuideAnimator的作者.
+3.感谢[NineOldAndroid](https://github.com/JakeWharton/NineOldAndroids),[SimilarUCBrowserWizardGuideAnimator](https://github.com/qtstsq55/SimilarUCBrowserWizardGuideAnimator),[LoadingDrawable](https://github.com/dinuscxj/LoadingDrawable)等开源项目作者的贡献.
 

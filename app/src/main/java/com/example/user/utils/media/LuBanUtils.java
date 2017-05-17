@@ -7,6 +7,7 @@ import java.util.List;
 
 import me.shaohui.advancedluban.Luban;
 import me.shaohui.advancedluban.OnCompressListener;
+import me.shaohui.advancedluban.OnMultiCompressListener;
 
 
 /**
@@ -217,10 +218,10 @@ public class LuBanUtils {
      * @param files
      * @param listener
      */
-    public static void ThirdGearCompressListImage(Context context, List<File> files, final CompressListener listener) {
+    public static void ThirdGearCompressListImage(Context context, List<File> files, final ListCompressListener listener) {
         Luban.compress(context, files)//传入的图片地址
                 .putGear(Luban.THIRD_GEAR)      //设定压缩档次，默认3挡
-                .launch(new OnCompressListener() { //设置回调
+                .launch(new OnMultiCompressListener() { //设置回调
 
                     @Override
                     public void onStart() {
@@ -229,9 +230,9 @@ public class LuBanUtils {
                     }
 
                     @Override
-                    public void onSuccess(File file) {
+                    public void onSuccess(List<File> fileList) {
                         // TODO 压缩成功后调用，返回压缩后的图片文件
-                        listener.onSuccess(file.getAbsolutePath());
+                        listener.onListSuccess(fileList);
                     }
 
                     @Override
@@ -249,10 +250,10 @@ public class LuBanUtils {
      * @param files
      * @param listener
      */
-    public static void OneGearCompressListImage(Context context, List<File> files, final CompressListener listener) {
+    public static void OneGearCompressListImage(Context context, List<File> files, final ListCompressListener listener) {
         Luban.compress(context, files)//传入的图片地址
                 .putGear(Luban.FIRST_GEAR)      //设定压缩档次，默认1挡
-                .launch(new OnCompressListener() { //设置回调
+                .launch(new OnMultiCompressListener() { //设置回调
 
                     @Override
                     public void onStart() {
@@ -261,9 +262,9 @@ public class LuBanUtils {
                     }
 
                     @Override
-                    public void onSuccess(File file) {
+                    public void onSuccess(List<File> fileList) {
                         // TODO 压缩成功后调用，返回压缩后的图片文件
-                        listener.onSuccess(file.getAbsolutePath());
+                        listener.onListSuccess(fileList);
                     }
 
                     @Override
@@ -281,10 +282,10 @@ public class LuBanUtils {
      * @param files
      * @param listener
      */
-    public static void CustomGearCompressListImage(Context context, List<File> files, final CompressListener listener) {
+    public static void CustomGearCompressListImage(Context context, List<File> files, final ListCompressListener listener) {
         Luban.compress(context, files)//传入的图片地址
                 .putGear(Luban.CUSTOM_GEAR)      //设定压缩档次，默认CUSTOM_GEAR挡
-                .launch(new OnCompressListener() { //设置回调
+                .launch(new OnMultiCompressListener() { //设置回调
 
                     @Override
                     public void onStart() {
@@ -293,9 +294,9 @@ public class LuBanUtils {
                     }
 
                     @Override
-                    public void onSuccess(File file) {
+                    public void onSuccess(List<File> fileList) {
                         // TODO 压缩成功后调用，返回压缩后的图片文件
-                        listener.onSuccess(file.getAbsolutePath());
+                        listener.onListSuccess(fileList);
                     }
 
                     @Override
@@ -315,5 +316,15 @@ public class LuBanUtils {
         void onError(Throwable e);
     }
 
+    /**
+     * 集合上传成功的回调
+     */
+    public interface ListCompressListener {
+        void onStart();
+
+        void onListSuccess(List<File> files);
+
+        void onError(Throwable e);
+    }
 
 }

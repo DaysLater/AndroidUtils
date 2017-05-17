@@ -45,6 +45,7 @@
 
 
 
+
 具体目录如下:
 
 1.[request](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/request)包下包含有
@@ -109,6 +110,9 @@ b.webview相关: [webView](https://github.com/DaysLater/AndroidUtils/tree/master
 
 c.其他自定义view: [numal](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/weight/numal)包
 - [SelectTextView](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/weight/numal/SelectTextView.java) 关于超文字显示的textview  文字点击显示更多/隐藏一部分
+- [SwipeListLayout](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/weight/numal/SwipeListLayout.java) 侧滑删除的layout,必须是父类layout,需配合 SwipeSlideListener 使用
+- [SwipeSlideListener](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/weight/numal/SwipeSlideListener.java) 侧滑删除layout的监听器  侧滑Layout需与之配合使用 内含一个传入litview的滑动监听
+- [ListSlideView](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/weight/numal/ListSlideView.java) 自定义的侧滑listView 需配合item布局使用
 
 9.[util](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/util)包为别人一体整理的工具类
 

@@ -48,6 +48,7 @@
 	    增加一个时光宝盒打开关闭效果的自定义欢迎动画
 	    增加一个三个圆动画效果的欢迎动画
 	    增加一个动画工具类
+	    增加一个LuBanUtils图片压缩工具类
 
 
 
@@ -75,7 +76,8 @@
 - [AudioRecoderUtils](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/media/AudioRecoderUtils.java)录音/或播放工具类
 - [glide](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/media/GildeTools)工具类
 - [volley](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/media/VolleyTools)加载图片的工具类
-- 其他关于[bitmap或者drawable](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/media)的工具类
+- [LuBanUtils](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/media) 鲁班图片压缩工具类,支持单张或多张上传(多张上传仅支持file形式的list)
+- 其他关于[bitmap或者drawable](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/media/LuBanUtils.java)的工具类
 
 6.[string](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/string)包下包含有
 

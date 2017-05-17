@@ -44,6 +44,12 @@ public class ReflectionUtil {
         return null;
     }
 
+    /**
+     * 通过类对象，获取指定文件
+     * @param obj 类对象
+     * @param fieldName 文件名
+     * @return
+     */
     public static Object getFieldValue(Object obj, String fieldName) {
         if (obj == null || TextUtils.isEmpty(fieldName)) {
             return null;
@@ -63,6 +69,12 @@ public class ReflectionUtil {
         return null;
     }
 
+    /**
+     * 通过类对象，给指定文件设置数据
+     * @param obj 类对象
+     * @param fieldName 文件名
+     * @param value     文件内容
+     */
     public static void setFieldValue(Object obj, String fieldName, Object value) {
         if (obj == null || TextUtils.isEmpty(fieldName)) {
             return;

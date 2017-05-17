@@ -30,11 +30,34 @@ public class ViewFindUtils {
         }
         return (T) childView;
     }
-
+    /**
+     * 替换holder里面的onClick方法
+     * @param view
+     * @param listener
+     * @param ids
+     */
+    public static void setOnHolderViewClickListener(View view, View.OnClickListener listener,int... ids){
+        for (int id: ids) {
+            hold(view,id).setOnClickListener(listener);
+        }
+    }
     /**
      * 替代findviewById方法
      */
     public static <T extends View> T find(View view, int id) {
         return (T) view.findViewById(id);
     }
+
+    /**
+     * 替换setonClick方法
+     * @param view
+     * @param listener
+     * @param ids
+     */
+    public static void setOnClickListener(View view, View.OnClickListener listener,int... ids){
+        for (int id: ids) {
+            find(view,id).setOnClickListener(listener);
+        }
+    }
+
 }

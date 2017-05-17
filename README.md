@@ -45,6 +45,9 @@
 	    新增侧滑删除的父布局空间
 	    侧滑删除的listview
 	    圆弧形进度条
+	    增加一个时光宝盒打开关闭效果的自定义欢迎动画
+	    增加一个三个圆动画效果的欢迎动画
+	    增加一个动画工具类
 
 
 
@@ -79,6 +82,7 @@
 - [AESUtils](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/string/AESUtils.java)(AES加密解密工具类)
 - [CyptoUtils](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/string/CyptoUtils.java)(DES加密工具类)
 - [MD5](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/string/MD5.java)(MD5加密工具类)
+- [AnimUtils](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/string/AnimUtils.java) 动画工具类(仿UC欢迎动画)具体使用方法参照:[使用方法](https://github.com/qtstsq55/SimilarUCBrowserWizardGuideAnimator/blob/master/app/src/main/java/com/example/ucwizard/MainActivity.java)
 - [其他工具类](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/string).具体自己看源码
 
 7.[sys](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/sys)包下含有
@@ -116,6 +120,8 @@ c.其他自定义view: [numal](https://github.com/DaysLater/AndroidUtils/blob/ma
 - [SwipeSlideListener](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/weight/numal/SwipeSlideListener.java) 侧滑删除layout的监听器  侧滑Layout需与之配合使用 内含一个传入litview的滑动监听
 - [ListSlideView](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/weight/numal/ListSlideView.java) 自定义的侧滑listView 需配合item布局使用
 - [RoundProgressView](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/weight/numal/RoundProgressView.java) 自定义圆弧进度条
+- [BoxLid](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/weight/numal/BoxLid.java) 自定义欢迎动画(时光宝盒样式)具体动画效果请点击:[动画效果](https://github.com/nextdever/BoxLid/blob/master/screenshots/boxlid.gif)
+- [SplashView](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/weight/numal/SplashView.java) 三个圆的欢迎动画
 
 9.[util](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/util)包为别人一体整理的工具类
 
@@ -160,4 +166,6 @@ c.其他自定义view: [numal](https://github.com/DaysLater/AndroidUtils/blob/ma
 1.在1.0完成后,还在慢慢增加常用工具类,多谢Android交流群里面的群友的支持.
 
 2.感谢交流群_小戴,交流群_三金的工具类支持与奉献.
+
+3.感谢NineOldAndroid及SimilarUCBrowserWizardGuideAnimator的作者.
 

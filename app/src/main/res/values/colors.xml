@@ -31,5 +31,18 @@
     <color name="article_page_textcolor_select_text">#ff000000</color>
     <color name="article_page_textcolor_selected">#ffad8a5a</color>
 
-
+    <color name="orange">#FF9600</color>
+    <color name="aqua">#02D1AC</color>
+    <color name="yellow">#FFD200</color>
+    <color name="yellow2">#bcd9da</color>
+    <color name="pink">#FF3892</color>
+    <color name="gray">#6c6868</color>
+    <integer-array name="colors">
+        <item>@color/orange</item>
+        <item>@color/aqua</item>
+        <item>@color/yellow</item>
+        <item>@color/blue</item>
+        <item>@color/green</item>
+        <item>@color/pink</item>
+    </integer-array>
 </resources>

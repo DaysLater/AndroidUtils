@@ -10,9 +10,10 @@
 - 由于CSDN不能修改上传的资源,此jar包仅为1.0版本
 - [CSDN下载](http://download.csdn.net/detail/qq_31590149/9840984)
 - 最新依赖jar包下载,请点击跳转
-- [百度云下载](http://pan.baidu.com/s/1skEKd3J)
-- [微云下载](https://share.weiyun.com/eee0327b28a9bba47a3c3d9d20df987b)
+- [百度云下载](http://pan.baidu.com/s/1i5MIh5j)
+- [微云下载](https://share.weiyun.com/56b4ffc4b5f22237d8b53b098928146a)
 - 说明:如果下载链接不存在,请发邮件至邮箱:814326663@qq.com,询问最新的下载链接
+- aar格式的依赖包下载:[百度云下载](http://pan.baidu.com/s/1bo7Lbsj),[微云](https://share.weiyun.com/97d9ef8a2e094bea61c29260d138a5b5)
 
 5.如果要使用自定义控件,请使用maven的方式引用,jar包形式暂只支持工具类的使用
 
@@ -50,8 +51,12 @@
 	    增加一个时光宝盒打开关闭效果的自定义欢迎动画
 	    增加一个三个圆动画效果的欢迎动画
 	    增加一个动画工具类
+
+	更新说明(v1.6):
+	    由于1.5在jitpack.io上打包失败,故新更新1.6
 	    增加一个LuBanUtils图片压缩工具类
 	    新增一个动画相关的包,包下含有动画相关的类
+	    增加一个ARR依赖库的下载地址
 
 
 
@@ -171,7 +176,7 @@ c.其他自定义view: [numal](https://github.com/DaysLater/AndroidUtils/blob/ma
 
    		dependencies {
 			//copy to your app build 
-   			compile 'com.github.DaysLater:AndroidUtils:v1.5'
+   			compile 'com.github.DaysLater:AndroidUtils:v1.6'
    			// 如要关联之前的依赖 请修改
    			//compile 'com.github.DaysLater:AndroidUtils:v1.x'
    			//为对应的版本号.工具类版本从1.0开始

@@ -132,6 +132,23 @@ c.其他自定义view: [numal](https://github.com/DaysLater/AndroidUtils/blob/ma
 - [RoundProgressView](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/weight/numal/RoundProgressView.java) 自定义圆弧进度条
 - [BoxLid](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/weight/numal/BoxLid.java) 自定义欢迎动画(时光宝盒样式)具体动画效果请点击:[动画效果](https://github.com/nextdever/BoxLid/blob/master/screenshots/boxlid.gif)
 - [SplashView](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/weight/numal/SplashView.java) 三个圆的欢迎动画
+- [iQiYiLoadingView](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/weight/numal/iQiYiLoadingView.java)仿爱奇艺的视频加载动画
+
+
+    iQiYiLoadingView的自定义属性说明:
+    //设置三角形的颜色
+    app:innerTriangleColor="@android:color/holo_orange_dark"
+    //设置三角形外接圆的半径
+    app:innerTriangleRadius="8dp"
+    //设置外面进度条的颜色
+    app:outerCircleColor="@android:color/holo_blue_dark"
+    //设置外面进度条的半径
+    app:outerCircleRadius="16dp"
+    //设置是否需要背景
+    app:isNeedBackground="false"
+    //设置背景的颜色
+    app:backgroundColor="@android:color/holo_orange_light"
+
 
 9.[util](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/util)包为别人一体整理的工具类
 

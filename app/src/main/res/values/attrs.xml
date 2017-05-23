@@ -34,5 +34,13 @@
             <enum name="WaterBottleLoadingRenderer" value="11"/>
         </attr>
     </declare-styleable>
-
+    <declare-styleable name="iQiYiLoadingView">
+        <attr name="outerCircleRadius" format="dimension|reference" />
+        <attr name="outerCircleColor" format="color|reference" />
+        <attr name="innerTriangleRadius" format="dimension|reference" />
+        <attr name="innerTriangleColor" format="color|reference" />
+        <attr name="backgroundColor" format="color|reference" />
+        <attr name="isNeedBackground" format="boolean" />
+        <attr name="strokeWidth" format="dimension|reference" />
+    </declare-styleable>
 </resources>

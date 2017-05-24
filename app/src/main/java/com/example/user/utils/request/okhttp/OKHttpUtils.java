@@ -260,7 +260,14 @@ public class OKHttpUtils {
 
         void onFailure();
     }
-
+    /**
+     * 下载的callback
+     */
+    public interface ProgressDownloadCallBack {
+        void onSuccess();
+        void onProgress(int progress);
+        void onFailure();
+    }
     /**
      * 下载文件的方法
      *
@@ -289,6 +296,47 @@ public class OKHttpUtils {
                 File file1 = new File(savePath);
                 FileOutputStream fileOutputStream = new FileOutputStream(file1);
                 while ((len = inputStream.read(buf)) != -1) {
+                    fileOutputStream.write(buf, 0, len);
+                }
+                fileOutputStream.flush();
+                fileOutputStream.close();
+                inputStream.close();
+                callBack.onSuccess();
+            }
+        });
+    }
+
+    /**
+     * 下载文件带进度
+     * @param url
+     * @param savePath
+     * @param callBack
+     */
+    public void loadFileHasProgress(String url, final String savePath, final ProgressDownloadCallBack  callBack){
+        Request request = new Request.Builder()
+                //下载地址
+                .url(url)
+                .build();
+        okHttpClient.newCall(request).enqueue(new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+                callBack.onFailure();
+            }
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                int len;
+                byte[] buf = new byte[2048];
+                InputStream inputStream = response.body().byteStream();
+                long requestLength =  response.body().contentLength();
+                long total = 0;
+                //可以在这里自定义路径
+                File file1 = new File(savePath);
+                FileOutputStream fileOutputStream = new FileOutputStream(file1);
+                while ((len = inputStream.read(buf)) != -1) {
+                    total += len;
+                    // publishing the progress....
+                    if (requestLength > 0) // only if total length is known
+                        callBack.onProgress((int) (total * 100 / requestLength));
                     fileOutputStream.write(buf, 0, len);
                 }
                 fileOutputStream.flush();

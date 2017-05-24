@@ -58,8 +58,10 @@
 	    新增一个动画相关的包,包下含有动画相关的类
 	    增加一个ARR依赖库的下载地址
 
-	更新说明(v1.7):
+	更新说明(v1.7):(暂未打包成jar,arr包与上传jitpack.io)
 	    增加一个爱奇艺加载动画的自定义view-iQiYiLoadingView
+	    增加一个自带进度的Imagview 和一个自带进度的蒙版CustomView(需配合imagview或者photoview使用)
+	    OkhttpUtil里面新增一个下载进度接口,与一个下载进度类
 
 
 
@@ -152,6 +154,8 @@ c.其他自定义view: [numal](https://github.com/DaysLater/AndroidUtils/blob/ma
     //设置背景的颜色
     app:backgroundColor="@android:color/holo_orange_light"
 
+- [ProcessImageView](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/weight/numal/ProcessImageView.java) 自带进度的ImageView
+- [CustomView](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/weight/numal/CustomView.java) 自带进度的View,需配合Imagview或者Photo使用,建议使用Relativelayout和framelayout中使用(宽高与设置的imageview或者photoview一致)
 
 9.[util](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/util)包为别人一体整理的工具类
 

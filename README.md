@@ -10,10 +10,10 @@
 - 由于CSDN不能修改上传的资源,此jar包仅为1.0版本
 - [CSDN下载](http://download.csdn.net/detail/qq_31590149/9840984)
 - 最新依赖jar包下载,请点击跳转
-- [百度云下载](http://pan.baidu.com/s/1i5MIh5j)
-- [微云下载](https://share.weiyun.com/56b4ffc4b5f22237d8b53b098928146a)
+- [百度云下载](http://pan.baidu.com/s/1pLdRbdD)
+- [微云下载](https://share.weiyun.com/b84783d56c433c9a77d615d021beb7cc)
 - 说明:如果下载链接不存在,请发邮件至邮箱:814326663@qq.com,询问最新的下载链接
-- aar格式的依赖包下载:[百度云下载](http://pan.baidu.com/s/1bo7Lbsj),[微云](https://share.weiyun.com/97d9ef8a2e094bea61c29260d138a5b5)
+- aar格式的依赖包下载:[百度云下载](http://pan.baidu.com/s/1hskkWrq),[微云](https://share.weiyun.com/5790593d7c41d1799ce195fa225ca57c)
 
 5.如果要使用自定义控件,请使用maven的方式引用,jar包形式暂只支持工具类的使用
 
@@ -200,7 +200,7 @@ c.其他自定义view: [numal](https://github.com/DaysLater/AndroidUtils/blob/ma
 
    		dependencies {
 			//copy to your app build 
-   			compile 'com.github.DaysLater:AndroidUtils:v1.6'
+   			compile 'com.github.DaysLater:AndroidUtils:v1.7'
    			// 如要关联之前的依赖 请修改
    			//compile 'com.github.DaysLater:AndroidUtils:v1.x'
    			//为对应的版本号.工具类版本从1.0开始

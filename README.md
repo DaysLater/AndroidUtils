@@ -58,10 +58,13 @@
 	    新增一个动画相关的包,包下含有动画相关的类
 	    增加一个ARR依赖库的下载地址
 
-	更新说明(v1.7):(暂未打包成jar,arr包与上传jitpack.io)
+	更新说明(v1.7):
 	    增加一个爱奇艺加载动画的自定义view-iQiYiLoadingView
 	    增加一个自带进度的Imagview 和一个自带进度的蒙版CustomView(需配合imagview或者photoview使用)
 	    OkhttpUtil里面新增一个下载进度接口,与一个下载进度类
+
+	更新说明(v1.8):((暂未打包成jar,arr包与上传jitpack.io))
+	    增加一个屏幕适配的工具类
 
 
 
@@ -115,6 +118,9 @@
 - [SoftKeyboardUtil](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/sys/SoftKeyboardUtil.java)  键盘工具类
 - [TimePickUtils](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/sys/TimePickUtils.java)  时间选择器工具类
 - [ToastUtils](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/sys/ToastUtils.java) 吐司工具类
+- [SupportMultipleScreensUtil](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/sys/SupportMultipleScreensUtil.java) 屏幕适配的工具类
+   用法如下图:
+   [image](https://github.com/DaysLater/AndroidUtils/blob/master/img/how.png)
 
 8.[weight](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/weight)包下自定义控件,包含有
 

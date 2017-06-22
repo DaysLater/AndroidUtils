@@ -1,8 +1,12 @@
 package com.example.user.utils.util;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * <pre>
@@ -13,7 +17,7 @@ import android.os.Bundle;
  * </pre>
  */
 public class ActivityUtils {
-
+    private static List<Activity> activityList = new ArrayList<>();
     private ActivityUtils() {
         throw new UnsupportedOperationException("u can't instantiate me...");
     }
@@ -56,4 +60,19 @@ public class ActivityUtils {
     public static void launchActivity(Context context, String packageName, String className, Bundle bundle) {
         context.startActivity(IntentUtils.getComponentIntent(packageName, className, bundle));
     }
+
+    public static void add(Activity activity){
+        activityList.add(activity);
+    }
+
+    public static void remove(Activity activity){
+        activityList.remove(activity);
+    }
+
+   public static List<Activity> getActivityList(){
+       if (activityList==null){
+           activityList = new ArrayList<>();
+       }
+       return activityList;
+   }
 }

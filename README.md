@@ -119,8 +119,10 @@
 - [TimePickUtils](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/sys/TimePickUtils.java)  时间选择器工具类
 - [ToastUtils](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/sys/ToastUtils.java) 吐司工具类
 - [SupportMultipleScreensUtil](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/sys/SupportMultipleScreensUtil.java) 屏幕适配的工具类
+
    用法如下图:
    [image](https://github.com/DaysLater/AndroidUtils/blob/master/img/how.png)
+   [image](https://github.com/DaysLater/AndroidUtils/blob/master/img/how2.png)
 
 8.[weight](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/weight)包下自定义控件,包含有
 

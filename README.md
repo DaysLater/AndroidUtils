@@ -220,5 +220,5 @@ c.其他自定义view: [numal](https://github.com/DaysLater/AndroidUtils/blob/ma
 
 2.感谢交流群_小戴,交流群_三金的工具类支持与奉献.
 
-3.感谢[NineOldAndroid](https://github.com/JakeWharton/NineOldAndroids),[SimilarUCBrowserWizardGuideAnimator](https://github.com/qtstsq55/SimilarUCBrowserWizardGuideAnimator),[LoadingDrawable](https://github.com/dinuscxj/LoadingDrawable)等开源项目作者的贡献.
+3.感谢[NineOldAndroid](https://github.com/JakeWharton/NineOldAndroids),[SimilarUCBrowserWizardGuideAnimator](https://github.com/qtstsq55/SimilarUCBrowserWizardGuideAnimator),[LoadingDrawable](https://github.com/dinuscxj/LoadingDrawable),[多谢谷歌小弟的博客与视频](http://blog.csdn.net/lfdfhl/article/details/52735103)等开源项目作者的贡献.
 

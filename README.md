@@ -121,8 +121,10 @@
 - [SupportMultipleScreensUtil](https://github.com/DaysLater/AndroidUtils/blob/master/app/src/main/java/com/example/user/utils/sys/SupportMultipleScreensUtil.java) 屏幕适配的工具类
 
    用法如下图:
-   [image](https://github.com/DaysLater/AndroidUtils/blob/master/img/how.png)
-   [image](https://github.com/DaysLater/AndroidUtils/blob/master/img/how2.png)
+   [查看图片1](https://github.com/DaysLater/AndroidUtils/blob/master/img/how.png)
+   ![image](https://github.com/DaysLater/AndroidUtils/blob/master/img/how.png)
+   [查看图片2](https://github.com/DaysLater/AndroidUtils/blob/master/img/how2.png)
+ ![image](https://github.com/DaysLater/AndroidUtils/blob/master/img/how2.png)
 
 8.[weight](https://github.com/DaysLater/AndroidUtils/tree/master/app/src/main/java/com/example/user/utils/weight)包下自定义控件,包含有
 

@@ -1,6 +1,7 @@
 package com.example.user.utils.request.volley;
 
 import android.app.Application;
+import android.content.Context;
 import android.net.Uri;
 import android.util.Log;
 
@@ -21,16 +22,30 @@ import java.util.Map;
  * Volley请求工具类
  */
 public class VolleyRequestUtil {
-    public static RequestQueue queue;//请求队列
+    private static RequestQueue queue;//请求队列
     private static final String TAG = VolleyRequestUtil.class.getSimpleName();
-    public static StringRequest stringRequest;
-    public static MyJsonObjectRequest jsonObjectRequest;
+    private static StringRequest stringRequest;
+    private static MyJsonObjectRequest jsonObjectRequest;
+    private static VolleyRequestUtil requsetUtils;
+    private Context mContext;
 
-    public static void init(Application application) {
+    public static void init(Context application) {
+        requsetUtils = new VolleyRequestUtil(application);
+    }
+
+    private VolleyRequestUtil(Context application) {
+        this.mContext = application;
         queue = Volley.newRequestQueue(application);
     }
 
-    public static RequestQueue getRequestQueue() {
+    public static VolleyRequestUtil getInstance() {
+        if (requsetUtils == null) {
+            throw new RuntimeException("Please init it first!");
+        }
+        return requsetUtils;
+    }
+
+    private RequestQueue getRequestQueue() {
         if (queue == null) {
             throw new RuntimeException("Please init it first!");
         } else {
@@ -45,7 +60,7 @@ public class VolleyRequestUtil {
      * tag：当前请求的标签；
      * volleyListenerInterface：VolleyListenerInterface接口；
      */
-    public static void RequestGet(String url, String tag, VolleyListenerInterface volleyListenerInterface) {
+    public void RequestGet(String url, String tag, VolleyListenerInterface volleyListenerInterface) {
         // 清除请求队列中的tag标记请求
         getRequestQueue().cancelAll(tag);
         // 创建当前的请求，获取字符串内容
@@ -66,7 +81,7 @@ public class VolleyRequestUtil {
      * params：POST请求内容；map集合为参数
      * volleyListenerInterface：VolleyListenerInterface接口；
      */
-    public static void RequestPost(String url, String tag, final Map<String, String> params, VolleyListenerInterface volleyListenerInterface) {
+    public void RequestPost(String url, String tag, final Map<String, String> params, VolleyListenerInterface volleyListenerInterface) {
         // 清除请求队列中的tag标记请求
         getRequestQueue().cancelAll(tag);
         // 创建当前的POST请求，并将请求内容写入Map中
@@ -92,7 +107,7 @@ public class VolleyRequestUtil {
      * params：POST请求内容；
      * volleyListenerInterface：VolleyListenerInterface接口；
      */
-    public static void RequestPostByJson(final String url, String tag, final Map<String, String> map, VolleyJsonObjectListenerInterface volleyListenerInterface) {
+    public void RequestPostByJson(final String url, String tag, final Map<String, String> map, VolleyJsonObjectListenerInterface volleyListenerInterface) {
         // 清除请求队列中的tag标记请求
         getRequestQueue().cancelAll(tag);
         String params = appendParameter(url, map);
@@ -117,7 +132,7 @@ public class VolleyRequestUtil {
         getRequestQueue().start();
     }
 
-    private static String appendParameter(String url, Map<String, String> params) {
+    private String appendParameter(String url, Map<String, String> params) {
         Uri uri = Uri.parse(url);
         Uri.Builder builder = uri.buildUpon();
         for (Map.Entry<String, String> entry : params.entrySet()) {
@@ -134,7 +149,7 @@ public class VolleyRequestUtil {
      * params：POST请求内容；
      * volleyListenerInterface：VolleyListenerInterface接口；
      */
-    public static void RequestPostByJson2(final String url, String tag, final Map<String, String> map, VolleyJsonObjectListenerInterface listenerInterface) {
+    public void RequestPostByJson2(final String url, String tag, final Map<String, String> map, VolleyJsonObjectListenerInterface listenerInterface) {
         // 清除请求队列中的tag标记请求
 //        getRequestQueue().cancelAll(tag);
 

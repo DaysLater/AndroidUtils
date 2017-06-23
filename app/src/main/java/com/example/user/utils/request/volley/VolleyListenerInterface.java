@@ -6,23 +6,41 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 
 public abstract class VolleyListenerInterface {
-    public Context mContext;
-    public static Response.Listener<String> mListener;
-    public static Response.ErrorListener mErrorListener;
-    public static VolleyListenerInterface volleyListenerInterface;
+    private Context mContext;
+    private Response.Listener<String> mListener;
+    private Response.ErrorListener mErrorListener;
+    private VolleyListenerInterface volleyListenerInterface;
+
+    /**
+     * 初始化接口建议不要使用
+     * @param context
+     * @param listener
+     * @param errorListener
+     */
     public VolleyListenerInterface(Context context, Response.Listener<String> listener, Response.ErrorListener errorListener) {
         this.mContext = context;
         this.mErrorListener = errorListener;
         this.mListener = listener;
     }
-    public VolleyListenerInterface(){
-        Response.Listener<String> listener;
-        Response.ErrorListener errorListener;
-    }
+
+    /**
+     * 初始化接口 不建议使用
+     * @param context
+     * @param listenerInterface
+     */
     public VolleyListenerInterface(Context context, VolleyListenerInterface listenerInterface) {
         this.mContext = context;
         this.volleyListenerInterface = listenerInterface;
     }
+
+    /**
+     * 初始化接口,建议直接使用
+     */
+    public VolleyListenerInterface(){
+        Response.Listener<String> listener;
+        Response.ErrorListener errorListener;
+    }
+
     // 请求成功时的回调函数
     public abstract void onMySuccess(String result);
     // 请求失败时的回调函数

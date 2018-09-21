@@ -45,7 +45,7 @@ public class VolleyRequestUtil {
         return requsetUtils;
     }
 
-    private RequestQueue getRequestQueue() {
+    public RequestQueue getRequestQueue() {
         if (queue == null) {
             throw new RuntimeException("Please init it first!");
         } else {

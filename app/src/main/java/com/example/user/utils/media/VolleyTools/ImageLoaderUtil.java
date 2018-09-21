@@ -28,15 +28,15 @@ public class ImageLoaderUtil {
                 imageView.setBackgroundResource(resId);
             }
         });
-        VolleyRequestUtil.getRequestQueue().add(imageRequest);
-        VolleyRequestUtil.getRequestQueue().start();
+        VolleyRequestUtil.getInstance().getRequestQueue().add(imageRequest);
+        VolleyRequestUtil.getInstance().getRequestQueue().start();
     }
 
     /*
     * 通过ImageLoader来显示网络图片
     * */
     public static void setImageLoader(String url, ImageView imageView, int defaultImageResId, int errorImageResId) {
-        ImageLoader loader = new ImageLoader(VolleyRequestUtil.getRequestQueue(), new BitmapCache());
+        ImageLoader loader = new ImageLoader(VolleyRequestUtil.getInstance().getRequestQueue(), new BitmapCache());
         ImageLoader.ImageListener imageListener = ImageLoader.getImageListener(imageView, defaultImageResId, errorImageResId);
         loader.get(url, imageListener);
     }
@@ -45,7 +45,7 @@ public class ImageLoaderUtil {
     * 通过Volley的NetWorkImageView来显示网络图片
     * */
     public static void setNetWorkImageView(String url, NetworkImageView netWorkImageView, int defaultImageResId, int errorImageResId) {
-        ImageLoader loader = new ImageLoader(VolleyRequestUtil.getRequestQueue(), new BitmapCache());
+        ImageLoader loader = new ImageLoader(VolleyRequestUtil.getInstance().getRequestQueue(), new BitmapCache());
         netWorkImageView.setDefaultImageResId(defaultImageResId);
         netWorkImageView.setErrorImageResId(errorImageResId);
         netWorkImageView.setImageUrl(url, loader);
